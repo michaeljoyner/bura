@@ -1,0 +1,88 @@
+@tailwind preflight;
+
+
+
+.banner-bg {
+	background-image: url(./images/header_small.jpg);
+	background-size: cover;
+}
+
+.blue-divider-bg {
+	background-image: url(./images/divider_blue.jpg);
+	background-size: cover;
+	background-position-x: 50%;
+}
+
+.green-divider-bg {
+	background-image: url(./images/divider_green.jpg);
+	background-size: cover;
+}
+
+.purple-divider-bg {
+	background-image: url(./images/divider_purple.jpg);
+	background-size: cover;
+}
+
+.ff-headline {
+	@apply .text-2xl .font-bold;
+}
+
+.ff-heading {
+	@apply .text-xl .font-bold .uppercase;
+}
+
+.ff-button {
+	@apply .text-xl .font-bold;
+}
+
+.ff-body {
+	@apply .text-xl .font-medium;
+}
+
+.ff-body-fine {
+	@apply .text-sm .font-medium;
+}
+
+.btn {
+	@apply .font-bold .text-xl .no-underline .text-orange .border-4 .border-orange .p-2 .my-4 .rounded;
+}
+
+svg {
+	fill: currentColor;
+}
+
+.max-30 {
+	max-width: 30%;
+}
+
+
+
+@media (min-width: 500px) {
+	.ff-headline {
+		@apply .text-4xl .font-bold;
+	}
+	
+	.ff-heading {
+		@apply .text-2xl .font-bold .uppercase;
+	}
+	
+	.ff-button {
+		@apply .text-2xl .font-bold;
+	}
+	
+	.ff-body {
+		@apply .text-2xl .font-medium;
+	}
+	
+	.ff-body-fine {
+		@apply .text-base .font-medium;
+	}
+
+	.btn {
+		@apply .font-bold .text-2xl .no-underline .text-orange .border-4 .border-orange .p-2 .my-4 .rounded;
+	}
+}
+
+
+@tailwind utilities;
+
