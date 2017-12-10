@@ -68,7 +68,7 @@
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(1);
-module.exports = __webpack_require__(2);
+module.exports = __webpack_require__(3);
 
 
 /***/ }),
@@ -77,10 +77,12 @@ module.exports = __webpack_require__(2);
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_jump_js__ = __webpack_require__(11);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_jump_js__ = __webpack_require__(2);
 
 
 var toplink = document.querySelector('.to-top-link');
+var scrolldown = document.querySelector('.scroll-down');
+
 if (toplink) {
     toplink.addEventListener('click', function (ev) {
         ev.preventDefault();
@@ -89,22 +91,15 @@ if (toplink) {
     }, false);
 }
 
+if (scrolldown) {
+    scrolldown.addEventListener('click', function (ev) {
+        ev.preventDefault();
+        Object(__WEBPACK_IMPORTED_MODULE_0_jump_js__["a" /* default */])(document.querySelector('.t-shirts'));
+    }, false);
+}
+
 /***/ }),
 /* 2 */
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
-
-/***/ }),
-/* 3 */,
-/* 4 */,
-/* 5 */,
-/* 6 */,
-/* 7 */,
-/* 8 */,
-/* 9 */,
-/* 10 */,
-/* 11 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -276,6 +271,12 @@ var singleton = jumper();
 
 /* harmony default export */ __webpack_exports__["a"] = (singleton);
 
+
+/***/ }),
+/* 3 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
 
 /***/ })
 /******/ ]);

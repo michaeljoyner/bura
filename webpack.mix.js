@@ -11,7 +11,8 @@ let tailwind = require('tailwindcss');
  |
  */
 
-mix.js('resources/assets/js/app.js', 'public/js/')
+mix.setPublicPath('./public')
+  .js('resources/assets/js/app.js', 'public/js/')
 	.postCss('resources/assets/css/app.css', 'public/css', [
   tailwind('./tailwind.js'),
 ]);
