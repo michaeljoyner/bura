@@ -8,7 +8,7 @@
 }
 
 .blue-divider-bg {
-	background-image: url(./images/divider_blue.jpg);
+	background-image: url(./images/blue_divider_2.jpg);
 	background-size: cover;
 	background-position-x: 50%;
 }
@@ -47,6 +47,10 @@
 	@apply .font-bold .text-xl .no-underline .text-orange .border-4 .border-orange .p-2 .my-4 .rounded;
 }
 
+.btn-small {
+	@apply .font-bold .text-sm .no-underline .text-orange .border-4 .border-orange .p-2 .my-4 .rounded;
+}
+
 svg {
 	fill: currentColor;
 }
@@ -80,6 +84,10 @@ svg {
 
 	.btn {
 		@apply .font-bold .text-2xl .no-underline .text-orange .border-4 .border-orange .p-2 .my-4 .rounded;
+	}
+
+	.btn-small {
+		@apply .font-bold .text-lg .no-underline .text-orange .border-4 .border-orange .p-2 .my-4 .rounded;
 	}
 }
 
